@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> Object Finder </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="icon1.png">
+</head>
+
+<body background="background.jpg">
+    <center>
+        <div class="heading">
+            <h2> Object Finder </h2>
+            <h5 id="note"> Enter the object name you want to detect. If it matches,
+                only then the model will detect.</h5> <!--Note for how to use the app-->
+        </div>
+        <h3> Object name:</h3>
+        <input placeholder="Enter the object you want to find here." id="findobject"> <br> <br> <!--Placeholder to find the object-->
+        <button class="btn btn-danger" onclick="start()">Start</button> <br> <!--Button to start-->
+        <h3 id="status" class="btn btn-info"></h3> <!--empty tag for status-->
+        <h3 id="objectdetect" class="btn btn-primary"></h3> <!--empty tag for showing the objects detected-->
+    </center>
+</body>
+
+</html>
